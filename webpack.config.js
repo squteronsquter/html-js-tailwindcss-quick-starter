@@ -3,7 +3,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: './src/app.css',
+  entry: ['./src/app.css', './src/main.js'],
   mode: process.env.NODE_ENV,
   module: {
     rules: [
